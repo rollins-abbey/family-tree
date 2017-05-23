@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Media Tags</title>
+</head>
+<body>
+  
+  <canvas id="canvas" width="500" height="200"></canvas>
+       
+  <script>
+    function drawRectangle() {
+        var canvas = document.getElementById("canvas");
+        var context = canvas.getContext('2d');
+        
+        var x = 50;
+        var y = 50;
+        var width = 450;
+        var height = 150;
+        
+        var shape = new Path2D();
+        shape.rect(x+20, y-20, width, height);
+        
+        context.fillStyle = "red";
+        context.fill(shape);
+        
+    }
+    drawRectangle();
+    
+    </script>
+        
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+   <video src="Video/2017-04-4010-thomas-s-monson-720p-eng.mp4" controls></video>
+   <audio src="Audio/2017-04-4010-thomas-s-monson-64k-eng.mp3" controls></audio>
+-->
+
+
+
+
+<!--
+  <canvas id="canvas" width="500" height="200"></canvas><br>
+   
+   <script>
+        function drawRectangle(){
+            var canvas = document.getElementById("canvas");
+            var context = canvas.getContext("2d");
+       
+            var x = 0;
+            var y = 0;
+            var width = 450;
+            var height = 150;
+       
+            var shape = new Path2D();
+            shape.rect(x+0, y-0, width, height);
+        
+            context.fillStyle = "red";
+            context.fill(shape);
+        }
+       
+       drawRectangle();
+                   
+    </script>-->
