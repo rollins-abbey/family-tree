@@ -47,6 +47,7 @@ main {
 
 .children {
    display: flex;
+   padding-bottom: 20px;
    
 }
 
@@ -76,11 +77,11 @@ main {
 	position: absolute;
 	-webkit-transform: perspective(600px) rotateY(180deg);
 	transform: perspective(600px) rotateY(180deg);
-	background: #00e5e6; 
+	background: white; 
     width:240px; 
     height:200px; 
     border-radius: 7px;
-    border: 8px solid white;
+    border: 8px solid #f2db30;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	transition: -webkit-transform .5s linear 0s;
@@ -103,14 +104,94 @@ main {
     font-family: 'Oswald', sans-serif;
 }
 
-footer {
-    height: 50px;
-    background-color: orange;
+.content {
+  min-height: calc(100vh - 70px);
 }
 
-footer p {
+.section2 {
+    height: 550px;
+    background: white;
+    position: relative;
+}
+
+.section3 {
+    height: 550px;
+    background: #FF5C5C;
+    position: relative;
+}
+
+.section4 {
+    height: 550px;
+    background: white;
+    position: relative;
+}
+
+.section5 {
+    height: 550px;
+    background: #FF5C5C;
+    position: relative;
+}
+
+.pulse {
+    width: 230px;
+    height: 230px;
+    background: #00E4E6;
+    border-radius: 50%;
+    color: darkorange;
+    font-size: 30px;
     text-align: center;
-    font-family: 'Kristi', cursive;
-    font-size: 20px;
-    padding-top: 10px;
+    line-height: 230px;
+    font-family: verdana;
+    text-transform: uppercase;
+    animation: animate 3s linear infinite; 
+}
+
+@keyframes animate {
+    0%
+    {
+        box-shadow: 0 0 0 0 rgba(37, 222, 213, .7);
+    }
+     40%
+    {
+        box-shadow: 0 0 0 50px rgba(37, 222, 213, 0);
+    }
+     80%
+    {
+        box-shadow: 0 0 0 50px rgba(37, 222, 213, 0);
+    }
+     100%
+    {
+        box-shadow: 0 0 0 0 rgba(37, 222, 213, 0);
+    }
+}
+
+.section2 .pulse{
+    display: block;
+    position: absolute;
+    top: 30%;
+    margin-left: 200px;
+}
+
+.section3 .pulse{
+    display: block;
+    position: absolute;
+    top: 30%;
+    margin-left: 1200px;
+}
+
+.section4 .pulse{
+    display: block;
+    position: absolute;
+    top: 30%;
+    margin-left: 200px;
+}
+
+.section5 .pulse{
+    display: block;
+    position: absolute;
+    top: 30%;
+    margin-left: 1200px;
+}
+
+
 }
