@@ -12,12 +12,12 @@ header {
     padding-top: 40px;
 }
 
-nav#menu {
+#menu {
     padding: 75px 0px 50px 50px;
     float: right;
 }
 
-nav#menu a {
+#menu a {
     font-family: Arial, Helvitica, sans-serif;
     font-size: 17px;
     background: #ff5c5c;
@@ -29,7 +29,7 @@ nav#menu a {
     transition: background 0.5s linear 0s, color 0.3s linear 0s;
 }
 
-nav#menu > a:hover {
+#menu > a:hover {
     background: grey;
     color: #FFF;
 }
@@ -56,7 +56,7 @@ main {
     height: 200px; 
     margin: 20px; 
     padding: 10px 10px;
-/*    float: left; */
+
 }
 .flip-card > .front {
     position: absolute;
@@ -108,25 +108,25 @@ main {
   min-height: calc(100vh - 70px);
 }
 
-.section2 {
+#section2 {
     height: 550px;
     background: white;
     position: relative;
 }
 
-.section3 {
+#section3 {
     height: 550px;
     background: #FF5C5C;
     position: relative;
 }
 
-.section4 {
+#section4 {
     height: 550px;
     background: white;
     position: relative;
 }
 
-.section5 {
+#section5 {
     height: 550px;
     background: #FF5C5C;
     position: relative;
@@ -165,33 +165,134 @@ main {
     }
 }
 
-.section2 .pulse{
+#section2 .pulse{
     display: block;
     position: absolute;
     top: 30%;
     margin-left: 200px;
 }
 
-.section3 .pulse{
+#section3 .pulse{
     display: block;
     position: absolute;
     top: 30%;
-    margin-left: 1200px;
+    margin-left: 1050px;
 }
 
-.section4 .pulse{
+#section4 .pulse{
     display: block;
-    position: absolute;
+    position: relative;
     top: 30%;
     margin-left: 200px;
+    float: left;
 }
 
-.section5 .pulse{
+#section5 .pulse{
     display: block;
     position: absolute;
     top: 30%;
-    margin-left: 1200px;
+    margin-left: 1050px;
 }
 
 
+.copyright {
+   height: 75px;
+   background-color: darkorange;
+   padding-top: 50px;
+}
+
+.copyright a {
+    margin-left: 1300px;
+    font-family: Arial, Helvitica, sans-serif;
+    font-size: 17px;
+    background: #AFF767;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background 0.5s linear 0s, color 0.3s linear 0s;
+}
+
+#menu1 {
+    padding-top: 50px;
+}
+
+.class1 {
+    float: right;
+    margin: 20px;
+    background: darkorange;
+    width: 200px;
+    height: 400px;
+    cursor: pointer;    
+}
+
+.class2 {
+    float: right;
+    margin: 20px;
+    background: #ff5c5c;
+    width: 200px;
+    height: 400px;
+    cursor: pointer;    
+}
+
+#bubblebox {
+    position: relative;
+    top: 12%;
+    height: 400px; 
+    margin-left: 550px;
+    margin-right: 40px;
+    border: 5px solid darkorange; 
+    border-style: solid dotted;
+}
+
+#bubbles { 
+    width: auto; 
+    margin: 0px auto; 
+    text-align: center; 
+}
+
+#bubbles > div { 
+    display: inline-block; 
+    width: 10px; 
+    height: 10px; 
+    margin: 24px 10px 0px 10px; 
+    background: rgba(0,0,0,.1); 
+    text-align: center; 
+    border: 2px solid #999; 
+    border-radius: 100%; 
+    font-size: 17px; 
+    text-decoration: none; 
+    transition: background 0.3s linear 0s; 
+    cursor: pointer; 
+}
+
+#aboutcontent { 
+    margin: 0px auto; 
+    transition: opacity 0.3s linear 0s; 
+    font-family: Arial;
+}
+
+#aboutcontent > h1 { 
+    text-align: center; 
+    color: #F2DB30; 
+}
+
+#aboutcontent > p { 
+    font-size: 17px; 
+    line-height: 1.5em; 
+    padding: 20px 50px; 
+    color: black; 
+}
+ 
+#name {
+    padding-top: 20px;
+    width: 700px;
+    height: 400px; 
+    margin-left: 700px;
+    margin-right: 40px;
+}
+
+#name p {
+    font-family: 'Handlee', cursive;
+    font-size: 25px;
 }

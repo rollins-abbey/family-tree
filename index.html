@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <title>Family Tree</title>
     <link href="styles.css" rel="stylesheet">
-    <link href="about/about.html">
+    <link href="family-name/family-name.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Kristi" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+    <script src="about/about.js"></script>
+    <script src="photos/photos.js"></script>
+    <script src="family-name/family-name.js"></script>
     <script src="family.js"></script>
+    
 </head>
 <body>
    <div class="content">
@@ -19,66 +24,96 @@
             <img src="images/rollins-family-tree.png" alt="Rollins Family Tree">
         </div>
     <nav>
-        <nav id="menu">
+        <div id="menu">
         <a href='#'>Home</a>
-        <a href='about/about.html'>About Us</a>
-        <a href='memories/memories.html'>Memories</a>
-        <a href='family-name/family-name.html'>Family Name</a>
-        <a href='photos/photos.html'>Photos</a>
-    </nav>
+        <a href='#section2'>About Us</a>
+        <a href='#section3'>Memories</a>
+        <a href='#section4'>Family Name</a>
+        <a href='#section5'>Photos</a>
+        </div>
+     </nav>
     </header>
     <main>
        <div id="update">
         <div class="parents">
             <div class="flip-card">
-              <div class="back">Back</div>
-              <div class="front">Gary Rollins</div>
+              <div class="back">DOB: June 28, 1952<br>Age: 65<br>Gary is semi-retired and likes to spend his time working on home improvement projects, golfing, fishing and hunting.</div>
+              <div class="front">Gary Rollins<br></div>
             </div>
             <div class="flip-card">
-              <div class="back">Back</div>
-              <div class="front">Dixie Rollins</div>
+              <div class="back">DOB: April 3, 1959<br>Age: 58<br>Dixie is a homemaker who likes to spend time with grandchildren, children, and going out with friends to lunch.</div>
+              <div class="front">Dixie Rollins<br></div>
             </div>
         </div>
         <div class="children">
            <div class="flip-card">
-              <div class="back">Back</div>
-              <div class="front">Tyler Rollins</div>
+              <div class="back">DOB: August 13, 1980<br>Age: 36<br>Tyler is a Radiology Technologist and student at Weber State University studying echocardiography. He likes to mountain bike and go fishing. </div>
+              <div class="front">Tyler Rollins<br></div>
             </div>
             <div class="flip-card">
-              <div class="back">Back</div>
-              <div class="front">Chris Rollins</div>
+              <div class="back">DOB: May 23, 1982<br>Age: 35<br>Chris is married to Kerra Rollins and together they have 4 beautiful daughters: Aftin, Laci, Paige, and Camryn. He works at Tesla as an accounting director.</div>
+              <div class="front">Chris Rollins<br></div>
             </div>
             <div class="flip-card">
-              <div class="back">Back</div>
-              <div class="front">Spencer Rollins</div>
+              <div class="back">DOB: March 6, 1986<br>Age: 31<br>Spencer works in IT for Vail Resorts. He loves to snowboard, travel and make gourmet cuisine.</div>
+              <div class="front">Spencer Rollins<br></div>
             </div>
             <div class="flip-card">
-              <div class="back">Back</div>
-              <div class="front">Abbey Rollins</div>
-            </div>
+              <div class="back">DOB: July 6, 1988<br>Age: 29<br>Abbey is a pharmacy technician working at St. Mark's Hospital. She recently graduated from BYU-Idaho and is pursuing a career in health information technology. </div>
+              <div class="front">Abbey Rollins<br></div>
+            </div>        
             <div class="flip-card">
-              <div class="back">Back</div>
-              <div class="front">Rylee Rollins</div>
+              <div class="back">DOB: July 23, 1991<br>Age: 25<br>Rylee is a nursing student at Salt Lake Community College and loves it! She currently works at Primary Children's hospital as a patient care technician in the infant unit. She is also engaged to her husband-to-be Brian Farnworth.</div>
+              <div class="front">Rylee Rollins<br></div>
             </div>
         </div>
         </div>
-        <div class="section2">
+        <div id="section2">
             <div class="pulse">About Us</div>
+            <div id="bubblebox">
+                <div id="bubbles">
+                  <div onclick="bubbles(0); clearInterval(intrvl);" style="background:#999;"></div>
+                  <div onclick="bubbles(1); clearInterval(intrvl);"></div>
+                  <div onclick="bubbles(2); clearInterval(intrvl);"></div>
+                </div>
+                <div id="aboutcontent">
+                  <h2>Heading Number 1</h2>
+                  <p>Content for section 1</p>
+                </div>
+           </div>
+
         </div>
-        <div class="section3">
+        <div id="section3">
             <div class="pulse">Memories</div>
         </div>
-        <div class="section4">
+        <div id="section4">
             <div class="pulse">Family Name</div>
+            <div id="name">
+               <svg width="600" height="150">
+                  <text x="300" y="125" text-anchor="middle">
+                    <tspan id="l1">R</tspan>
+                    <tspan id="l2">O</tspan>
+                    <tspan id="l3">L</tspan>
+                    <tspan id="l4">L</tspan>
+                    <tspan id="l5">I</tspan>
+                    <tspan id="l6">N</tspan>
+                    <tspan id="l7">S</tspan>
+                    </text>
+               </svg>
+                <p>Rollins is an ancient Norman name that arrived in England after the Norman Conquest of 1066. The name Rollins comes from the Norman given name Rdulphus. This name, which also occurs as Ralf, Rolf, and Raoul, is adapted from the Old French given name Raol. Alternatively, the name could have been a baptismal name as in "the son of Rowland" which is pronouced Rawland and Rolland in Furness and Cumberland, where a large family of Rawlinsons has sprung up, undoubtedly descendants of Rowland through Rawlandson.</p>
+            </div>
         </div>
-        <div class="section5">
+        <div id="section5">
             <canvas id='showCanvas' width="800" height="550"></canvas>
             <div class="pulse">Photos</div>
         </div>
+        <div class="copyright">
+            <div class="arrow">
+              
+            </div>  
+        </div>
     </main>
-    </div>
     <footer>
-        
     </footer>
-</body>
+    </body>
 </html>
